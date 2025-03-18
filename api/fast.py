@@ -16,7 +16,7 @@ app.add_middleware(
 @app.get('/')
 def root():
     response = {
-        'greeting': 'Servus, griaß di!',    # This is a typical Bavarian greeting ;)
+        'greeting': 'Bonjour à tous et à toutes!',    # This is a typical French greeting ;)
         'timestamp': datetime.now()
     }
 
