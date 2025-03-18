@@ -6,7 +6,7 @@ import time
 
 class TestApiRoot(unittest.TestCase):
     def test_api_root(self):
-        # Adding a 15s sleep timer to ensure 
+        # Adding a 15s sleep timer to ensure
         # that the container has time to start up
         time.sleep(15)
 

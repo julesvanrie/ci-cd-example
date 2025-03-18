@@ -5,3 +5,10 @@ pylint:
 
 pytest:
 	PYTHONDONTWRITEBYTECODE=1 pytest -v --color=yes
+
+
+docker_build:
+	docker build -t $(IMAGE_URI) .
+
+docker_run:
+	docker run -it -e PORT=8000 -p 8080:8000 $(IMAGE_URI)
